@@ -2,3 +2,18 @@ Project to enable easy deployment of Ilya's Goliath async web server example to 
 http://www.igvita.com/2011/06/02/0-60-deploying-goliath-on-heroku-cedar/
 
 See example at: http://goliath-on-cedar.herokuapp.com/?query=goliath
+
+To run locally:
+
+  git clone git://github.com/rwdaigle/heroku_cedar_goliath.git
+  cd heroku_cedar_goliath
+  bundle install
+  foreman start
+  curl http://localhost:5000/?query=goliath
+
+To run on your own Heroku account:
+
+  git clone git://github.com/rwdaigle/heroku_cedar_goliath.git
+  heroku create mygoliath-on-cedar --stack cedar
+  git push heroku master
+  curl http://mygoliath-on-cedar.herokuapp.com/?query=goliath
