@@ -1,2 +1,4 @@
 Project to enable easy deployment of Ilya's Goliath async web server example to Heroku:
 http://www.igvita.com/2011/06/02/0-60-deploying-goliath-on-heroku-cedar/
+
+See example at: http://goliath-on-cedar.herokuapp.com/?query=em
